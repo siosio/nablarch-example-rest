@@ -1,0 +1,31 @@
+{
+  "name": "nablarch-example-rest",
+  "version": "1.0.0",
+  "description": "nablarch-example-rest ===============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siosio/nablarch-example-rest.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/siosio/nablarch-example-rest/issues"
+  },
+  "homepage": "https://github.com/siosio/nablarch-example-rest#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "semantic-ui": "^2.2.14",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "vue-cli": "^2.9.3",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13"
+  }
+}

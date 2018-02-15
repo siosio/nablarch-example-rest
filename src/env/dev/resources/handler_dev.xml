@@ -18,6 +18,7 @@
             <component class="com.nablarch.example.error.ExampleErrorLogWriter" />
           </property>
         </component>
+        <component class="com.nablarch.example.CorsHandler" />
         <component-ref name="dbConnectionManagementHandler"/>
         <component-ref name="transactionManagementHandler"/>
         <!-- ホットデプロイハンドラ -->

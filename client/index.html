@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>REST app クライアントアプリ</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet">
+
+  <style>
+    div.ui.main.container {
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <app-header v-on:new-project="new_project"></app-header>
+  <div class="ui main text container">
+    <router-view></router-view>
+  </div>
+</div>
+<script src="../public/js/app.js"></script>
+</body>
+</html>

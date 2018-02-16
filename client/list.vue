@@ -41,7 +41,6 @@
         axios.get('http://localhost:9080/projects')
             .then(function(response) {
               vm.projects = response.data;
-              console.log(vm.projects);
             })
             .catch(function(error) {
               console.log(error);

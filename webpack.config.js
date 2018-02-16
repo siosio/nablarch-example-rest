@@ -7,7 +7,7 @@ module.exports = {
 
   output : {
     filename: 'app.js',
-    path    : path.join(__dirname, 'public/js/')
+    path    : path.join(__dirname, '/client')
   },
   resolve: {
 

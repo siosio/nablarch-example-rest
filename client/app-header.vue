@@ -4,7 +4,7 @@
       <a href="#" class="header item">
         サンプルクライアント
       </a>
-      <a class="item">ホーム</a>
+      <a class="item" @click="$emit('home')">ホーム</a>
       <a class="item" @click="$emit('new-project')">プロジェクト登録</a>
     </div>
   </div>

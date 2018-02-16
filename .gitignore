@@ -104,3 +104,5 @@ node_modules
 
 semantic/dist/*
 !semantic/dist/semantic.min.js
+
+client/app.js

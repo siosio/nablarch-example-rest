@@ -1,6 +1,5 @@
 <template>
-  <div class="field" v-bind:class="requiredText">
-    <label>{{label_text}}</label>
+  <field :label_text="label_text" :required="required" :error_message="error_message">
     <select class="ui dropdown" :name="name" :value="value"
             @change="$emit('input', $event.target.selectedOptions.length ? $event.target.selectedOptions[0]._value : null)">
       <option value="">{{label_text}}</option>
@@ -8,14 +7,12 @@
         {{item.label}}
       </option>
     </select>
-    <div class="ui pointing red basic label" v-if="error_message != null">
-      {{error_message}}
-    </div>
-  </div>
+  </field>
 </template>
 
 <script>
-  import Semantic from '../../semantic/dist/semantic.min.js';
+  import Field from "./field.vue";
+  import '../../semantic/dist/semantic.js'
 
   const projectType = [
     {name: 'development', label: '新規開発PJ'},
@@ -31,14 +28,15 @@
   ];
 
   export default {
-    name    : "code-select",
+    components: {Field},
+    name      : "code-select",
     data() {
       return {
         projectType : projectType,
         projectClass: projectClass
       }
     },
-    props   : {
+    props     : {
       name         : {
         type    : String,
         required: true
@@ -67,11 +65,6 @@
         } else {
           return this.projectClass;
         }
-      }
-    },
-    computed: {
-      requiredText: function() {
-        return this.required ? 'required' : '';
       }
     }
   }

@@ -41,7 +41,7 @@ public class ProjectForm implements Serializable {
 
     /** 顧客ID */
     @Domain("id")
-    //@Required
+    @Required
     private String clientId;
 
     /** プロジェクト開始日 */
